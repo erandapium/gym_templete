@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fitness gym</title>
+<link rel="icon" href="images/IA-Website-2015-Icons_01_10.png">
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="stylesheets/overridestyle.css" rel="stylesheet" type="text/css">
+<link href="stylesheets/service.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="stylesheets/contact.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="stylesheets/media-query.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1000px">
+</head>
+<body>
+<nav class="navbar navbar-static-top navbar-color remove">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header"> <a class="navbar-brand" href="#">Contact Us: 0719110765</a> </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.facebook.com"><i class="fa fa-facebook-official" style="font-size:26px; color:000000;"></i></a></li>
+        <li><a href="http://www.twitter.com"><i class="fa fa-twitter" style="font-size:26px"></i></a></li>
+        <li><a href="http://www.plus.google.com"><i class="fa fa-google-plus-official" style="font-size:26px"></i></a></li>
+        <li><a href="http://www.instergrame.com"><i class="fa fa-instagram" style="font-size:26px"></i></a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<div class="jumbotron text-center background-image-reposision">
+    <div class="container">
+      <nav class="navbar navbar-default navbar-static-top nav-in-jumb sticky">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+
+          <div class="navbar-header"> <i class="fa fa-align-justify menu-icon"></i> <a class="navbar-brand" href="#"><img src="images/l.svg" alt="Brand"></a> </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+
+          <ul class="nav navbar-nav navbar-right remove slide">
+            <li><a href="index.html" style="color:#ffffff;font-size:18px;">Home</a></li>
+            <li><a href="service.html" style="color:#ffffff;font-size:18px;">Service</a></li>
+            <li><a href="gallery.html" style="color:#ffffff;font-size:18px;">Gallery</a></li>
+            <li><a href="about.html" style="color:#ffffff;font-size:18px;">About</a></li>
+            <li><a href="contact.html" style="color:#ffffff;font-size:18px;">Contact</a></li>
+          </ul>
+
+          <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="jumbotron background-remove">
+  <div class="container">
+    <div class="contact-form">
+      <div class="feild">
+        <div><label class="lable">First Name</lable></div>
+          <div><input type="text" name="fname" placeholder="First Name" class="text-feild"></div>
+      </div>
+      <div class="feild">
+        <div><label class="lable">Last Name</lable></div>
+          <div><input type="text" name="lname" placeholder="Last Name" class="text-feild"></div>
+      </div>
+      <div class="feild">
+        <div><label class="lable">Email</lable></div>
+          <div><input type="Email" name="email" placeholder="Email" class="text-feild"></div>
+      </div>
+      <div class="feild">
+        <div><label class="lable">Message</lable></div>
+          <div><textarea name="message" placeholder="Type Your Message" class="text-feid-edit"></textarea></div>
+      </div>
+      <button class="send-btn" name="send" type="submit">SEND</button>
+      <div class="map-holder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3959.3228606988323!2d80.10444884100038!3d7.088521670880323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3020ec25dc7a5%3A0xeb5c38719aa1ff81!2sFitness+Gym!5e0!3m2!1ssi!2slk!4v1489649605045" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<footer>2017 Fittness Fym All Rights Reserved</footer>
+<a href="#" class="back-to-top display">
+<h4 style="transform:translateY(50%); margin:0px;padding:0px;font-weight:bold;">Back To Top</h4>
+</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+
+jQuery(document).ready(function() {
+
+	var navoffset = jQuery(".sticky").offset().top;
+
+    jQuery(".sticky").wrap('<div class="nav-placeholder"></div>');
+
+	jQuery(".nav-placeholder").height(jQuery(".sticky").outerHeight());
+
+	jQuery(window).scroll(function(){
+
+		var scrollpos = jQuery(window).scrollTop();
+
+		if(scrollpos >= navoffset){
+
+			jQuery(".sticky").addClass("fixed");
+
+			}else{
+
+
+				jQuery(".sticky").removeClass("fixed");
+
+
+				}
+		});
+
+	});
+
+</script>
+<script>
+
+$(document).ready(function(){
+
+	var btt = $('.back-to-top');
+
+	btt.on('click', function(e){
+
+		$('html, body').animate({
+
+			scrollTop:0
+
+			}, 1000);
+		e.preventDefault();
+		});
+
+	$(window).on('scroll', function(){
+
+		var self = $(this),
+
+		height = self.height(),
+
+		top = self.scrollTop();
+
+		if(top > height){
+
+			if(!btt.is(':visible')){
+
+				btt.fadeIn();
+
+			}
+				}else{
+
+					btt.fadeOut();
+
+					}
+			});
+
+	});
+
+</script>
+<script>
+jQuery(document).ready(function(){
+
+  jQuery(".menu-icon").click(function(){
+
+    jQuery(".slide").slideToggle(400, function(){
+
+      jQuery(this).toggleClass("nav-expanded").css('display', '');
+
+    });
+
+  });
+
+});
+
+
+</script>
+</body>
+</html>

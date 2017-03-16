@@ -1,0 +1,22 @@
+.background-remove{
+  background-image: none;
+  background-color: #ffffff;
+}
+.flex{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.item{
+  margin: 5px;
+  transition: 500ms;
+  box-shadow: 3px 3px 5px #221d1d;
+}
+.item:hover{
+  transform:rotateZ(10deg);
+
+}

@@ -1,0 +1,42 @@
+.background-remove{
+  background-image: none;
+  background-color: #ffffff;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-images{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 10px #221d1d;
+}
+.section-holder{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+.section-holder h2{
+  font-size: 40px;
+  color: #F22613;
+  font-weight: bold;
+}
+.order{
+  order: -1;
+}
+@media(max-width 980px){
+
+.section-holder{
+  flex-wrap: wrap;
+}
+
+}
